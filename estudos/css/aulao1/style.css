@@ -1,0 +1,22 @@
+h1{
+    color:blue;
+}
+h3 a{
+    color:green;
+}
+button{
+    color:purple;
+    background-color:yellow;
+}
+#esseBotao{
+    color:red;
+    background-color:black;
+}
+.aqueleBotao{
+    font-size:50px;
+    background-color: aqua;
+}
+
+header > div{
+    background-color:orange;
+}
