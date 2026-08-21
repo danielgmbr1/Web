@@ -8,27 +8,44 @@
     
 </head>
 <body>
-    <h1>Digite suas informações </h1> 
-        
-        <h3>
-            <label>Nome:</label>
-            <input id="nome" type="text">
 
-            <label>Idade:</label>
-            <input id="idade" type="number" min="1" max="99">
+    <main class="container-principal">
 
-            <label>Experiência:</label>
-            <input id="experiencia" type="number" min="1" max="10">
+        <h1>Digite suas informações </h1> 
+
+        <form>
+             <div>
+                <label>Nome:</label>
+                <input id="nome" type="text">
+             </div>
             
-            <label>Energia:</label>
-            <input id="energia" type="number" min="1" max="10">
+             <div>
+                <label>Idade:</label>
+                <input id="idade" type="number" min="1" max="99">   
+             </div>
+            
+            <div>
+                <label>Experiência:</label>
+                <input id="experiencia" type="number" min="1" max="10">    
+            </div>
 
-            <button id="criar">Gerar personagem</button>
+            <div>
+                <label>Energia:</label>
+                <input id="energia" type="number" min="1" max="10">
+            </div>
+            
+            <div class="botao-criar">
+                <button id="criar">Gerar personagem</button>
+            </div>
+            
+        </form>
 
-        </h3>
-
-        <h2 id="resultado"></h2>
+        <div>
+            <h2 id="resultado"></h2>
+        </div>
         
         <script src="./script.js"></script>
+    </main>
+    
 </body>
 </html>
