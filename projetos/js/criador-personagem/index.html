@@ -30,7 +30,7 @@
             </div>
 
             <div>
-                <label>Energia:</label>
+                <label>Disposição:</label>
                 <input id="energia" type="number" min="1" max="10">
             </div>
             
@@ -40,12 +40,23 @@
             
         </form>
 
-        <div>
-            <h2 id="resultado"></h2>
-        </div>
         
-        <script src="./script.js"></script>
     </main>
-    
+
+    <div id="overlay">
+        <div id="card-modal">
+            <h2 id="nome-personagem"> </h2>
+            <img id="gato-escolhido" src="" alt="Gato do Personagem">
+            <h2 id="nivel-personagem"> </h2>
+            <h3 id="descricao-gato"> </h3>
+            <button id="fechar-modal">Voltar</button>
+        </div>
+    </div>
+
+    <aside> 
+        <img class="gato-olhando" src="./gatos/gato_olhando.png" alt="Gato olhando para a direita">     
+    </aside>
+
+    <script src="./script.js"></script>
 </body>
 </html>
