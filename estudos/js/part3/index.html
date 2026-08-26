@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: rgb(50, 50, 237);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> 
+        Tente clicar em mim
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        function clicou(){
+            a.innerText = 'Clicou!'
+            a.style.background = 'green'
+        }
+        function entrou(){
+            var x = Math.random() * 1000
+            var y = Math.random() * 1000
+
+            a.style.position = 'absolute'
+            a.style.left = x + 'px'
+            a.style.top = y + 'px'
+            a.innerText = 'Entrou!'
+            
+        }
+        function saiu(){
+            a.innerText = 'Não consegue né?'
+        }
+    </script>
+    
+</body>
+</html>
