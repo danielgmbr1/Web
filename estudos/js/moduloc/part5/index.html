@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de velocidade</title>
+
+    
+    <style>
+        #velocidade{
+            width: 100px;
+
+        }
+
+        #calcular{
+            margin-top: 10px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h3>
+        Informe a velocidade do seu carro em km/h: 
+        <input type="number" name="velocidade" id="velocidade">
+        <div id="calcular">
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+        
+    </h3>
+    
+    <p id="resultado"></p>
+
+    <script>
+        function calcular(){
+            var vel = Number(window.document.getElementById('velocidade').value)
+            if (vel <= 60 && vel > 0){
+                document.getElementById('resultado').innerHTML = "Está dirigindo na velocidade permitida."
+            }
+            else if (vel > 60){
+                document.getElementById('resultado').innerHTML = "Você quebrou 24167 leis de trânsito e está preso."
+            }   
+            else {
+                window.alert('Insira um valor valido!')
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

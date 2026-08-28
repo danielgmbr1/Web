@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    font-size: 28px;
+
+    color: white;
+
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Merchant Copy', sans-serif;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(66, 66, 66, 0.25), rgba(0, 0, 0, 0.25)),
+         url("../imagens/fundo-fazenda.gif"); 
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    filter:blur(5px);
+    transform: scale(1.05);
+
+    z-index: -1;
+}
+
+.conteudo {
+    margin-left: 220px;
+
+    min-height: 100vh;
+
+    padding: 40px;
+
+    gap: 50px;
+}
+
+.produtos{
+    margin-top: 80px;
+    text-align: center;
+}
+
+@font-face{
+    font-family: "Merchant Copy";
+    src: url("../fontes/Merchant\ Copy.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+}
+
+header h2{
+    font-size: 40px;
+
+    margin-top: 0;
+}
+
+.informacoes{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.info-card {
+    width: 100px;
+
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    
+}
+
+.produtos {
+   
+    text-align: center;
+}
+
+.acoes {
+
+    display: flex;
+    justify-content: center;
+}
+
+.descricao {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.descricao-card {
+    width: 80%;
+    max-width: 900px;
+
+    padding: 40px;
+
+    background-color: rgba(14, 14, 14, 0.54);
+
+    border-radius: 20px;
+
+    line-height: 1.6;
+}
+
+.descricao-card p {
+    font-size: 22px;
+    text-align: left;
+}
